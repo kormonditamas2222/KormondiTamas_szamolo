@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,33 @@ namespace szamolo
         public MainWindow()
         {
             InitializeComponent();
+        }
+        int kattok = 0;
+        
+        private void btn_1_Click(object sender, RoutedEventArgs e)
+        {
+            kattok++;
+            lb_1.Content = kattok;
+            btn_1.Height += 5;
+            btn_1.Width += 5;
+            btn_1.FontSize += 1;
+            if (kattok == 69)
+            {
+                btn_1.Content = 69;
+                btn_2.Content = 69;
+            }
+            
+        }
+
+        private void btn_2_Click(object sender, RoutedEventArgs e)
+        {
+            kattok = 0;
+            lb_1.Content = "";
+            btn_1.Height = 100;
+            btn_1.Width = 200;
+            btn_1.FontSize = 30;
+            btn_1.Content = "Kattints ide!";
+            btn_2.Content = "Törlés";
         }
     }
 }
