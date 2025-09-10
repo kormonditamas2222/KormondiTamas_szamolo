@@ -35,7 +35,6 @@ namespace szamolo
                 btn_1.Content = 69;
                 btn_2.Content = 69;
             }
-            
         }
 
         private void btn_2_Click(object sender, RoutedEventArgs e)
@@ -47,6 +46,14 @@ namespace szamolo
             btn_1.FontSize = 30;
             btn_1.Content = "Kattints ide!";
             btn_2.Content = "Törlés";
+        }
+
+        private void btn_be_Click(object sender, RoutedEventArgs e)
+        {
+            string nev = tb_1.Text;
+            lb_2.Content = $"Üdvözöllek kedves {nev}";
+            tb_1.Text = "";
+            btn_be.IsEnabled = false;
         }
     }
 }

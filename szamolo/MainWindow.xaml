@@ -10,6 +10,9 @@
         <Button x:Name="btn_1" Content="Kattints ide!" HorizontalAlignment="Left" Margin="161,187,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="btn_1_Click" FontSize="30"/>
         <Button x:Name="btn_2" Content="Törlés" HorizontalAlignment="Left" Margin="236,341,0,0" VerticalAlignment="Top" Width="50" Height="24" Click="btn_2_Click"/>
         <Label x:Name="lb_1" Content="" HorizontalAlignment="Left" Margin="390,199,0,0" VerticalAlignment="Top" FontSize="40"/>
+        <TextBox x:Name="tb_1" HorizontalAlignment="Left" Margin="538,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_be" Content="Bevitel" HorizontalAlignment="Left" Margin="562,287,0,0" VerticalAlignment="Top" Width="60" Click="btn_be_Click"/>
+        <Label x:Name="lb_2" Content="" HorizontalAlignment="Left" Margin="538,224,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
